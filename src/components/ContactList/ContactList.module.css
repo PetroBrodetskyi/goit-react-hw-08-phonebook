@@ -1,0 +1,39 @@
+.contactlistform {
+  height: 162px;
+  overflow: auto;
+}
+
+.contactlistform::-webkit-scrollbar {
+  display: none;
+}
+
+.linone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.liflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divflex {
+  display: flex;
+  gap: 10px;
+}
+
+.contactlistbutton {
+  width: 20px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contactlistbutton:hover {
+  color: orangered;
+}
