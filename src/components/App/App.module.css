@@ -1,6 +1,6 @@
 .sectionapp {
   width: 300px;
-  height: 400px;
+  height: 500px;
   padding: 30px;
   margin-top: 20px;
   margin-left: auto;
@@ -28,4 +28,13 @@
 
 .iconcontacts {
   font-size: 20px;
+}
+
+.navlink {
+  display: flex;
+  font-size: 16px;
+}
+
+.navsuslink {
+  display: flex;
 }

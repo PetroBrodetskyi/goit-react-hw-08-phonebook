@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contactReducer';
+import { selectContacts } from '../../redux/products.selectors';
 import css from './ContactForm.module.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { nanoid } from 'nanoid';
@@ -9,7 +10,8 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
-  const contacts = useSelector((state) => state.contacts.contacts);
+  const contacts = useSelector(selectContacts);
+
   const dispatch = useDispatch();
 
   const formatPhoneNumber = (value) => {

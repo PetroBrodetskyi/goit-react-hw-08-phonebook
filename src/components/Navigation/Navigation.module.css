@@ -1,0 +1,5 @@
+.navflex {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
