@@ -1,8 +1,9 @@
 import React from 'react';
+import css from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-      <p>Зберігайте ваші найважливіші контакти та залишайтеся на зв'язку</p>
+      <p className={css.hometext}>Зберігайте ваші найважливіші контакти та залишайтеся на зв'язку</p>
   );
 };
 

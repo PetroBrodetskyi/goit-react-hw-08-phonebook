@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectAuthAuthenticated, selectAuthUserData } from '../../redux/auth/auth.selectors';
 import { logOutThunk } from '../../redux/auth/authReducer';
 import { Link } from 'react-router-dom';
-import css from './Navigation.module.css'
+import css from './Navigation.module.css';
 
 const Navigation = () => {
   const authenticated = useSelector(selectAuthAuthenticated);
@@ -17,20 +17,25 @@ const Navigation = () => {
   return (
     <header>
       <nav className={css.navflex}>
-        <Link to="/"><p>Home</p></Link>
-
-        {authenticated ? (
+        <div className={css.navflex}>
           <div>
-            <p>{userName.name}</p>
-            <Link to="/" onClick={onLogOut}><p>Log out</p></Link>
-            <Link to="/contacts"><p>Contacts</p></Link>
+            <Link to="/"><p className={css.homelink}>Home</p></Link>
           </div>
-        ) : (
           <div>
-            <Link to="/login"><p>Login</p></Link>
-            <Link to="/register"><p>Register</p></Link>
+            {authenticated ? (
+              <div className={css.navflex}>
+                <p className={css.userlink}>{userName.name}</p>
+                <Link to="/" onClick={onLogOut}><p className={css.logoutlink}>Log out</p></Link>
+                <Link to="/contacts"><p className={css.contactslink}>Contacts</p></Link>
+              </div>
+            ) : (
+              <div className={css.navflex}>
+                <Link to="/login"><p className={css.loginlink}>Login</p></Link>
+                <Link to="/register"><p className={css.registerlink}>Register</p></Link>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );

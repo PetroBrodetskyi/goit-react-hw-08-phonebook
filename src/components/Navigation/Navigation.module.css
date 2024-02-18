@@ -1,5 +1,92 @@
 .navflex {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  align-items: center;
+  gap: 20px;
+}
+
+.userlink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.logoutlink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.logoutlink:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.homelink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.homelink:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.contactslink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.contactslink:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.loginlink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.loginlink:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.registerlink {
+  min-width: 100px;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.registerlink:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+a {
+  text-decoration: none;
 }

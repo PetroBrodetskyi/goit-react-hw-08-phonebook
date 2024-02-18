@@ -7,7 +7,6 @@ import Navigation from '../Navigation/Navigation';
 import { useDispatch } from "react-redux";
 import { refreshThunk } from '../../redux/auth/authReducer';
 import css from "./App.module.css";
-// import { AiFillPhone, AiFillContacts } from "react-icons/ai";
 
 // import ContactForm from '../ContactForm/ContactForm';
 // import ContactList from '../ContactList/ContactList';
@@ -61,7 +60,7 @@ const App = () => {
         <Navigation />
       </div>
 
-      <Suspense className={css.navsuslink} fallback={<Loader />}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           {appRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />

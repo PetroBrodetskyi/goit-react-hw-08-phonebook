@@ -12,7 +12,7 @@ import ErrorMessage from '../../components/Error/ErrorMassege';
 import { Filter } from '../../components/Filter/Filter';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import css from "./ContactsPage.module.css";
-import { AiFillCloseSquare } from "react-icons/ai";
+import { AiFillCloseSquare, AiFillPhone, AiFillContacts } from "react-icons/ai";
 
 const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -44,11 +44,11 @@ const ContactList = () => {
   const contFilter = getFilteredContacts();
   
   return (
-  <div className={css.contactlistform}>
-    <p>Phonebook</p>
+  <div>
+    <div className={css.titleflex}><h1 className={css.sectiontitle}>Phonebook</h1><AiFillPhone className={css.iconphone}/></div>
     <ContactForm />
 
-    <p>Contacts list</p>
+    <div className={css.titleflex}><h2>Contacts</h2><AiFillContacts className={css.iconcontacts}/></div>
     <Filter />
     {isLoading && <Loader />}
     {error && <ErrorMessage message={error} />}

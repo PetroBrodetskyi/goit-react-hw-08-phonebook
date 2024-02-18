@@ -1,33 +1,12 @@
 .sectionapp {
-  width: 300px;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  background-color: rgb(173, 214, 62);
-}
-
-.titleflex {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 16px;
-}
-
-.sectiontitle {
-  margin-top: 0;
-}
-
-.iconphone {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-}
-
-.iconcontacts {
-  font-size: 20px;
 }
 
 .navlink {
