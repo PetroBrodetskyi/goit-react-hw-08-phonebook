@@ -45,7 +45,7 @@ const ContactForm = () => {
           (contact.phone && contact.phone.replace(/[^0-9]/g, '') === normalizedNumber)
       )
     ) {
-      Notify.failure(`${name} вже є в списку контактів.`, {
+      Notify.failure(`${name} is already in the contacts list.`, {
         position: 'center-bottom',
         timeout: 3000,
         width: '320px',
@@ -82,7 +82,7 @@ const ContactForm = () => {
         name="name"
         value={name}
         onChange={handleChange}
-        placeholder="Ім'я"
+        placeholder="Name"
         pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         required
       />
@@ -92,12 +92,12 @@ const ContactForm = () => {
         name="number"
         value={number}
         onChange={handleChange}
-        placeholder="Номер телефону"
+        placeholder="Phone Number"
         pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
         required
       />
       <button className={css.contactbutton} type="submit">
-        Додати контакт
+        Add Contact
       </button>
     </form>
   );

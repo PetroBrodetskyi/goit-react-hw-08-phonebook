@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.registerbutton:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
 .titleflex {
   display: flex;
   justify-content: center;

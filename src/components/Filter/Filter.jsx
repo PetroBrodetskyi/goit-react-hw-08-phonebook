@@ -14,7 +14,7 @@ export const Filter = () => {
   };
 
   return (
-      <input className={css.filterinput} onChange={filterChange} value={filter} type="text" name="filter" placeholder="Пошук" />
+      <input className={css.filterinput} onChange={filterChange} value={filter} type="text" name="filter" placeholder="Search" />
   );
 };
 

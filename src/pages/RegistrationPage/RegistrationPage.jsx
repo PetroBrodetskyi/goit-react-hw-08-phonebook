@@ -52,7 +52,7 @@ const RegistrationPage = () => {
         </div>
 
         <button className={css.registerbutton} type="submit">
-          Реєстрація
+          Sign Up
         </button>
       </div>
     </form>

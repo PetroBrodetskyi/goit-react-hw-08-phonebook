@@ -40,7 +40,7 @@ const LoginPage = () => {
         {errors.password && <p>This field is required</p>}
 
         <button className={css.loginbutton} type="submit">
-          Вхід
+          Login
         </button>
       </div>
     </form>

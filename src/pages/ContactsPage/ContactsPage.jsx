@@ -48,7 +48,8 @@ const ContactList = () => {
     <div className={css.titleflex}><h1 className={css.sectiontitle}>Phonebook</h1><AiFillPhone className={css.iconphone}/></div>
     <ContactForm />
 
-    <div className={css.titleflex}><h2>Contacts</h2><AiFillContacts className={css.iconcontacts}/></div>
+    <div className={css.titleflex}><h2>Contacts</h2><AiFillContacts className={css.iconcontacts} /></div>
+      
     <Filter />
     {isLoading && <Loader />}
     {error && <ErrorMessage message={error} />}

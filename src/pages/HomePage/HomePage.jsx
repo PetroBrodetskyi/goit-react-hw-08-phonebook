@@ -3,7 +3,7 @@ import css from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-      <p className={css.hometext}>Зберігайте ваші найважливіші контакти та залишайтеся на зв'язку</p>
+      <p className={css.hometext}>Keep your most important contacts and stay connected</p>
   );
 };
 
