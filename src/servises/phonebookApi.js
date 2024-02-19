@@ -40,10 +40,15 @@ export const requestAllContacts = async () => {
   return data;
 };
 
-export const requestAddContact = async newContact => {
-  const { data } = await phonebookInstance.post('/contacts', newContact);
 
-  return data;
+export const requestAddContact = async newContact => {
+  try {
+    const { data } = await phonebookInstance.post('/contacts', newContact);
+    return data;
+  } catch (error) {
+    console.error('Error adding contact:', error.response.data);
+    throw error;
+  }
 };
 
 export const requestDeleteContact = async contactId => {

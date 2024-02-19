@@ -17,12 +17,12 @@ const ContactForm = () => {
   const formatPhoneNumber = (value) => {
     const phoneNumber = value.replace(/[^0-9]/g, '');
 
-    if (phoneNumber.length < 4) {
+    if (phoneNumber.length < 7) {
       return phoneNumber;
     } else if (phoneNumber.length < 7) {
       return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3)}`;
     } else {
-      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
+      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3, 5)}-${phoneNumber.slice(5, 7)}`;
     }
   };
 
@@ -59,7 +59,7 @@ const ContactForm = () => {
     const newOneContact = {
       id: nanoid(),
       name,
-      phone: formattedNumber,
+      number: formattedNumber,
     };
 
     dispatch(addContact(newOneContact));

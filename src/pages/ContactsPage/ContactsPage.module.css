@@ -1,7 +1,8 @@
-/* .contactlistform {
-  height: 162px;
+.contactlistform {
+  height: 188px;
   overflow: auto;
-} */
+  padding: 10px;
+}
 
 .contactlistform::-webkit-scrollbar {
   display: none;
@@ -16,14 +17,23 @@
 }
 
 .liflex {
+  width: 380px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 3px;
+}
+
+.liflex:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .divflex {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  font-weight: 600;
 }
 
 .contactlistbutton {
@@ -35,7 +45,7 @@
 }
 
 .contactlistbutton:hover {
-  color: orangered;
+  color: white;
 }
 
 .titleflex {
@@ -43,6 +53,12 @@
   justify-content: center;
   align-items: baseline;
   gap: 16px;
+}
+
+.filterinputflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectiontitle {

@@ -25,3 +25,7 @@
   border: none;
   cursor: pointer;
 }
+
+.contactbutton:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
