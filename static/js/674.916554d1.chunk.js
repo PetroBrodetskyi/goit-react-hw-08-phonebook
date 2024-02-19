@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[674],{674:(e,t,a)=>{a.r(t),a.d(t,{default:()=>s});a(791);const c="HomePage_hometext__OGWmx";var o=a(184);const s=()=>(0,o.jsx)("p",{className:c,children:"Keep your most important contacts and stay connected"})}}]);
+//# sourceMappingURL=674.916554d1.chunk.js.map
